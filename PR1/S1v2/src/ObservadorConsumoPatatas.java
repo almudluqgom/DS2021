@@ -10,7 +10,6 @@ public class ObservadorConsumoPatatas implements Observer {
             
 		if (o instanceof ConcreteObservable){
                     p = (ConcreteObservable) arg;
-                    System.out.printf("producto actualizado");
 
                 } 
 	}

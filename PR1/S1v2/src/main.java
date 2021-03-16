@@ -14,7 +14,7 @@ public class main {
     public static void main(String[] args) { 
         
         Observer o1 = new ObservadorConsumoPatatas();
-
+        //añadir 
         obs.addObserver(o1);
         Hebra h1= new Hebra();
         
