@@ -3,15 +3,16 @@ import java.util.Observer;
 
 public class ObservadorConsumoPatatas implements Observer {
 
-	/**
-	 * 
-	 * @param o
-	 * @param arg
-	 */
-        NPatataFrame p;
+        ConcreteObservable p;
+        
+        
+        @Override
 	public void update(Observable o, Object arg) {
-		// TODO - implement ObservadorConsumoPatatas.update
-		throw new UnsupportedOperationException();
+		if (arg instanceof ConcreteObservable){
+                    p = (ConcreteObservable) arg;
+                    System.out.printf("producto actualizado");
+                  
+                } 
 	}
 
 }

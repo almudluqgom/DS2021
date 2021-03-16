@@ -2,22 +2,22 @@ import java.util.Observable;
 
 public class ConcreteObservable extends Observable{
 
-	private int npatatas;
-      
+	private int nprod;
+        
 	public int getState() {
-		return this.npatatas;
-	}
-	/**
-	 * 
-	 * @param state
-	 */
-	public void setState(int state) {
-		this.npatatas = state;
-                this.setChanged();
-                this.notifyObservers();
-                //llamar a la hebra
+		return this.nprod;
 	}
         
+	public void setNumProd(int numprod) {
+            
+                synchronized (this) {
+            
+		this.nprod = numprod;
+                this.setChanged();
+                this.notifyObservers();
+                }
+             
+	}
         //notify heredado de Observable
         //addobserver heredado de Observable
         //setchanged heredado de Observable
