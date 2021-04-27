@@ -1,6 +1,7 @@
 # flutter_ds_p2
 
-A new Flutter application.
+Flutter Aplication for a simple Shopping List.
+Build folder is compressed since it has too much archives. Unzip before try the project.
 
 ## Getting Started
 
